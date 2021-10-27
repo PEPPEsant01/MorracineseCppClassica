@@ -3,8 +3,8 @@
 using namespace std;
 int main (){
     cout << "\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t\n\t\t\t\t\t\t\t\tBenvenuti Alla MORRA CINESEEE\t\t\t\t\t\t\t\t\n\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t---\t\n Vi presentiamo i due sfidanti di oggi, giocatore 1 e giocatore 2!\n Applaudite, applaudite, si sfideranno alla MORRA CINESEEE!!\n\n\n\n\n";
-    int pl1, pl2, vincitore, pu1, pu2, more_game, a, b, c;
-    bool loop_pl, loop_gioco, loop_quest, d, e, f;
+    int pl1, pl2, vincitore, pu1, pu2, more_game;
+    bool loop_pl, loop_gioco, loop_quest;
     pu1 = 0;
     pu2 = 0;
     loop_gioco = true;
@@ -17,7 +17,7 @@ int main (){
             cout << "le mosse valide sono : \n 1:sasso \n 2:carta \n 3:forbici \n";
             cout << "quale mossa tira il giocatore 1?  :  ";
             cin >> pl1;
-            if ((pl1>=1)&&(pl1<=3)){
+            if ((pl1 >= 1) && (pl1 <= 3)){
                 loop_pl = false;
             }
             else {
@@ -31,7 +31,7 @@ int main (){
             cout << "le mosse valide sono : \n 1:sasso \n 2:carta \n 3:forbici";
             cout << "quale mossa tira il giocatore 2?  :  ";
             cin >> pl2;
-            if ((pl1>=1)&&(pl1<=3)){
+            if ((pl1 >= 1) && (pl1 <= 3)){
                 loop_pl = false;
             }
             else {
@@ -40,20 +40,20 @@ int main (){
             }
 
         }
-        if (pl1==pl2) {
+        if (pl1 == pl2) {
             cout << "entrambi i giocatori hanno fatto pareggio!\n\n\n\n";
         }
         else {
             pl1 += 1;
-            if (pl1>2){
+            if (pl1 > 2){
                 pl1 -= 3;
             }
             
-            if (pl2>2){
+            if (pl2 > 2){
                 pl2 -= 3;
             }
 
-            if (pl1==pl2){
+            if (pl1 == pl2){
                 vincitore = 2;
                 pu2 += 1;
             }
@@ -70,7 +70,7 @@ int main (){
             cout << "vuoi giocare ancora? \n0 : no \n1 : si \n2 : si, con reset punteggio\n";
             cout << "risposta  :  ";
             cin >> more_game;
-            if ((more_game>=0)&&(more_game<=2)){
+            if ( (more_game >= 0) && (more_game <= 2) ){
                 loop_quest = false;
             }
             
