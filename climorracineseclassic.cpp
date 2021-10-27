@@ -48,6 +48,7 @@ int main (){
             if (pl1>2){
                 pl1 -= 3;
             }
+            
             if (pl2>2){
                 pl2 -= 3;
             }
@@ -72,6 +73,7 @@ int main (){
             if ((more_game>=0)&&(more_game<=2)){
                 loop_quest = false;
             }
+            
             else {
                 cout << "non ho ben capito!\n\n\n\n";
 
@@ -81,37 +83,14 @@ int main (){
         if (more_game == 0){
             loop_gioco = false;
         }
+        
         if (more_game == 2){
             pu1 = 0;
             pu2 = 0;
         }
 
 
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 return 0;
 }
